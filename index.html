@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Finder App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Movie Finder</h1>
+    <p>Search for movies and see details</p>
+  </header>
+
+  <form id="search-form">
+    <input type="text" id="search-input" placeholder="Enter movie title">
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="message"></div>
+  <div id="spinner" class="hidden"></div>
+  <div id="results"></div>
+
+  <!-- Modal for movie details -->
+<div id="modal" class="hidden">
+  <div id="modal-content">
+    <span id="close-modal">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
